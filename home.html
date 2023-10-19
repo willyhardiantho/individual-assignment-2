@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#" class="logo">Bookshelf<span>App</span></a>
+        </div>
+        <div class="username-info">
+            <img id="img_user" src="">
+            <h1 id="username">Billy</h1>
+            <button onclick="onLogout()">Log Out</button>
+        </div>
+    </header>
+    <section>
+       <div class="inputBooks">
+            <h1>Masukkan Buku Anda Disini</h1>
+            <input type="text" id="title" placeholder="Judul Buku">
+            <input type="text" id="author" placeholder="Penulis">
+            <input type="number" id="year" placeholder="Tahun Terbit">
+            <input type="checkbox" id="isComplete"> Selesai dibaca
+            <button onclick="addBook()">Tambahkan Buku</button>
+            <input type="text" id="search" placeholder="Cari buku berdasarkan judul" oninput="searchBooks()">
+       </div>
+        <div class="listBooks">
+            <div class="unfinishedBooks">
+                <h1>Belum Selesai Dibaca</h1>
+                <ul id="unfinishedBooks">
+                    <!-- Daftar buku yang belum selesai dibaca akan ditampilkan di sini -->
+                </ul>
+            </div>
+            <div class="finishedBooks">
+                <h1>Selesai Dibaca</h1>
+                <ul id="finishedBooks">
+                    <!-- Daftar buku yang selesai dibaca akan ditampilkan di sini -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>&copy; 2023 Willy Hardiantho</footer>
+    <script src="./js/home.js"></script>
+</body>
+</html>

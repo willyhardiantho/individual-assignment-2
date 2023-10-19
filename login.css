@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500;600&family=Raleway:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+:root {
+    --main-color : #FF9C1B;
+    --second-color : #EC1B09;
+    --body-color : #F2F5F9;
+
+    --body-font : 'Raleway', sans-serif;
+    --heading-font : 'Poppins', sans-serif;
+    --logo-font : 'Pacifico', cursive;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: var(--body-font);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    font-family: var(--body-font);
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: var(--logo-font);
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: var(--heading-font);
+}
+
+button {
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    color: #fff;
+    background-color: var(--second-color);
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+}
